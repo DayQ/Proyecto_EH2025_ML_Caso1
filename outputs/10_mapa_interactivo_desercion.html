@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b3f03a8b5f1e394b03de075aa167568a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b3f03a8b5f1e394b03de075aa167568a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b3f03a8b5f1e394b03de075aa167568a = L.map(
+                "map_b3f03a8b5f1e394b03de075aa167568a",
+                {
+                    center: [-16.5, -64.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_25b41bd55f9870c3445810da9fb3c3c4 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_25b41bd55f9870c3445810da9fb3c3c4.addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+            var circle_marker_9d6a2a761c663252411ee1a6e147f253 = L.circleMarker(
+                [-14.8333, -64.9],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.858854860186419, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_7db906f8baca1f075063b404ccdd6968 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e250dd0e6d5f58ba881a4e99b5a6507a = $(`<div id="html_e250dd0e6d5f58ba881a4e99b5a6507a" style="width: 100.0%; height: 100.0%;">     <b>Beni</b><br>     No asistencia total: 5.86%<br>     Rural: 9.14%<br>     Urbana: 4.78%<br>     Ingreso PC mediano: Bs 1039.33<br>     Cluster dominante: Perfil urbano joven - bajo riesgo     </div>`)[0];
+                popup_7db906f8baca1f075063b404ccdd6968.setContent(html_e250dd0e6d5f58ba881a4e99b5a6507a);
+            
+        
+
+        circle_marker_9d6a2a761c663252411ee1a6e147f253.bindPopup(popup_7db906f8baca1f075063b404ccdd6968)
+        ;
+
+        
+    
+    
+            circle_marker_9d6a2a761c663252411ee1a6e147f253.bindTooltip(
+                `<div>
+                     Beni - 5.86%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0222e5e1538d1f2a11a02b234359dd32 = L.circleMarker(
+                [-19.0333, -65.2627],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.503355704697988, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_ba3c63a0b916a1db0cf5e274c5f989ad = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_0e19886b798594b9c4e87ffde6a31b06 = $(`<div id="html_0e19886b798594b9c4e87ffde6a31b06" style="width: 100.0%; height: 100.0%;">     <b>Chuquisaca</b><br>     No asistencia total: 5.50%<br>     Rural: 9.41%<br>     Urbana: 2.22%<br>     Ingreso PC mediano: Bs 880.00<br>     Cluster dominante: Perfil rural vulnerable - mayor riesgo     </div>`)[0];
+                popup_ba3c63a0b916a1db0cf5e274c5f989ad.setContent(html_0e19886b798594b9c4e87ffde6a31b06);
+            
+        
+
+        circle_marker_0222e5e1538d1f2a11a02b234359dd32.bindPopup(popup_ba3c63a0b916a1db0cf5e274c5f989ad)
+        ;
+
+        
+    
+    
+            circle_marker_0222e5e1538d1f2a11a02b234359dd32.bindTooltip(
+                `<div>
+                     Chuquisaca - 5.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f52d8e8e700d459d298236ef06ff613 = L.circleMarker(
+                [-17.3895, -66.1568],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.63076923076923, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_e2519ce0cd15974c0e1f35c703a4d771 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7da9e62e4aa48fbb5c0dacb61ae70fcd = $(`<div id="html_7da9e62e4aa48fbb5c0dacb61ae70fcd" style="width: 100.0%; height: 100.0%;">     <b>Cochabamba</b><br>     No asistencia total: 3.63%<br>     Rural: 5.52%<br>     Urbana: 3.22%<br>     Ingreso PC mediano: Bs 1235.00<br>     Cluster dominante: Perfil urbano adolescente - riesgo elevado     </div>`)[0];
+                popup_e2519ce0cd15974c0e1f35c703a4d771.setContent(html_7da9e62e4aa48fbb5c0dacb61ae70fcd);
+            
+        
+
+        circle_marker_7f52d8e8e700d459d298236ef06ff613.bindPopup(popup_e2519ce0cd15974c0e1f35c703a4d771)
+        ;
+
+        
+    
+    
+            circle_marker_7f52d8e8e700d459d298236ef06ff613.bindTooltip(
+                `<div>
+                     Cochabamba - 3.63%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d628dfc3dd66322bee4a5d39fb4d7bae = L.circleMarker(
+                [-16.4897, -68.1193],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.547368421052632, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_fd908379506908ef8eb1ea86b62848c9 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_67f72e53cb8097063d30506ad3a46318 = $(`<div id="html_67f72e53cb8097063d30506ad3a46318" style="width: 100.0%; height: 100.0%;">     <b>La Paz</b><br>     No asistencia total: 4.55%<br>     Rural: 7.21%<br>     Urbana: 4.11%<br>     Ingreso PC mediano: Bs 1104.88<br>     Cluster dominante: Perfil urbano adolescente - riesgo elevado     </div>`)[0];
+                popup_fd908379506908ef8eb1ea86b62848c9.setContent(html_67f72e53cb8097063d30506ad3a46318);
+            
+        
+
+        circle_marker_d628dfc3dd66322bee4a5d39fb4d7bae.bindPopup(popup_fd908379506908ef8eb1ea86b62848c9)
+        ;
+
+        
+    
+    
+            circle_marker_d628dfc3dd66322bee4a5d39fb4d7bae.bindTooltip(
+                `<div>
+                     La Paz - 4.55%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75da8671a51c51c21bd0dd0ebf98b43f = L.circleMarker(
+                [-17.9647, -67.106],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.087193460490465, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_be74ed208d2587fedb6644af11a0d896 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7e7ad0e5c05360c9fb046366a57ee2b4 = $(`<div id="html_7e7ad0e5c05360c9fb046366a57ee2b4" style="width: 100.0%; height: 100.0%;">     <b>Oruro</b><br>     No asistencia total: 4.09%<br>     Rural: 5.56%<br>     Urbana: 3.32%<br>     Ingreso PC mediano: Bs 899.30<br>     Cluster dominante: Perfil urbano joven - bajo riesgo     </div>`)[0];
+                popup_be74ed208d2587fedb6644af11a0d896.setContent(html_7e7ad0e5c05360c9fb046366a57ee2b4);
+            
+        
+
+        circle_marker_75da8671a51c51c21bd0dd0ebf98b43f.bindPopup(popup_be74ed208d2587fedb6644af11a0d896)
+        ;
+
+        
+    
+    
+            circle_marker_75da8671a51c51c21bd0dd0ebf98b43f.bindTooltip(
+                `<div>
+                     Oruro - 4.09%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5663568409777b77d3c821ceb8087b3f = L.circleMarker(
+                [-11.0267, -68.7692],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.011444921316166, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_bbe7b6e3827632be9ff1376c0a02dae8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3514931928377c9d881e8a5e158c14c9 = $(`<div id="html_3514931928377c9d881e8a5e158c14c9" style="width: 100.0%; height: 100.0%;">     <b>Pando</b><br>     No asistencia total: 8.01%<br>     Rural: 11.43%<br>     Urbana: 4.58%<br>     Ingreso PC mediano: Bs 1172.27<br>     Cluster dominante: Perfil rural vulnerable - mayor riesgo     </div>`)[0];
+                popup_bbe7b6e3827632be9ff1376c0a02dae8.setContent(html_3514931928377c9d881e8a5e158c14c9);
+            
+        
+
+        circle_marker_5663568409777b77d3c821ceb8087b3f.bindPopup(popup_bbe7b6e3827632be9ff1376c0a02dae8)
+        ;
+
+        
+    
+    
+            circle_marker_5663568409777b77d3c821ceb8087b3f.bindTooltip(
+                `<div>
+                     Pando - 8.01%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40e66962dd89a026a85fe348fddc704c = L.circleMarker(
+                [-19.5836, -65.7531],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.297157622739018, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_1fa4c9e42a28e338964e7ed635c0f5a0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ecb50ae58ca7f39958a5c4225f343d98 = $(`<div id="html_ecb50ae58ca7f39958a5c4225f343d98" style="width: 100.0%; height: 100.0%;">     <b>Potosí</b><br>     No asistencia total: 5.30%<br>     Rural: 6.69%<br>     Urbana: 4.10%<br>     Ingreso PC mediano: Bs 846.83<br>     Cluster dominante: Perfil rural vulnerable - mayor riesgo     </div>`)[0];
+                popup_1fa4c9e42a28e338964e7ed635c0f5a0.setContent(html_ecb50ae58ca7f39958a5c4225f343d98);
+            
+        
+
+        circle_marker_40e66962dd89a026a85fe348fddc704c.bindPopup(popup_1fa4c9e42a28e338964e7ed635c0f5a0)
+        ;
+
+        
+    
+    
+            circle_marker_40e66962dd89a026a85fe348fddc704c.bindTooltip(
+                `<div>
+                     Potosí - 5.30%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d47d0cfbbfebeb3db557a1a488b0dd7e = L.circleMarker(
+                [-17.7833, -63.1821],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.11439842209073, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_8d4209a3130562ee1fea7b3bb6e93daf = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3f8a4ac89c03c40e140995cd0cc9efa2 = $(`<div id="html_3f8a4ac89c03c40e140995cd0cc9efa2" style="width: 100.0%; height: 100.0%;">     <b>Santa Cruz</b><br>     No asistencia total: 6.11%<br>     Rural: 14.01%<br>     Urbana: 4.97%<br>     Ingreso PC mediano: Bs 1307.60<br>     Cluster dominante: Perfil urbano joven - bajo riesgo     </div>`)[0];
+                popup_8d4209a3130562ee1fea7b3bb6e93daf.setContent(html_3f8a4ac89c03c40e140995cd0cc9efa2);
+            
+        
+
+        circle_marker_d47d0cfbbfebeb3db557a1a488b0dd7e.bindPopup(popup_8d4209a3130562ee1fea7b3bb6e93daf)
+        ;
+
+        
+    
+    
+            circle_marker_d47d0cfbbfebeb3db557a1a488b0dd7e.bindTooltip(
+                `<div>
+                     Santa Cruz - 6.11%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_036f5c392e41f0e785b4e13ecd64cd12 = L.circleMarker(
+                [-21.5355, -64.7296],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.718270571827057, "stroke": true, "weight": 3}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+        
+    
+        var popup_3db0649264d952fa85c8dd61f1427df2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5a7241da9d4346e33801b972f270039e = $(`<div id="html_5a7241da9d4346e33801b972f270039e" style="width: 100.0%; height: 100.0%;">     <b>Tarija</b><br>     No asistencia total: 5.72%<br>     Rural: 13.20%<br>     Urbana: 2.88%<br>     Ingreso PC mediano: Bs 1060.60<br>     Cluster dominante: Perfil urbano joven - bajo riesgo     </div>`)[0];
+                popup_3db0649264d952fa85c8dd61f1427df2.setContent(html_5a7241da9d4346e33801b972f270039e);
+            
+        
+
+        circle_marker_036f5c392e41f0e785b4e13ecd64cd12.bindPopup(popup_3db0649264d952fa85c8dd61f1427df2)
+        ;
+
+        
+    
+    
+            circle_marker_036f5c392e41f0e785b4e13ecd64cd12.bindTooltip(
+                `<div>
+                     Tarija - 5.72%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_12649a3299cec03f51bef4dd1c59cef4_layers = {
+                base_layers : {
+                    "Esri World Street Map" : tile_layer_25b41bd55f9870c3445810da9fb3c3c4,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_12649a3299cec03f51bef4dd1c59cef4 = L.control.layers(
+                layer_control_12649a3299cec03f51bef4dd1c59cef4_layers.base_layers,
+                layer_control_12649a3299cec03f51bef4dd1c59cef4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_b3f03a8b5f1e394b03de075aa167568a);
+
+        
+</script>
+</html>
